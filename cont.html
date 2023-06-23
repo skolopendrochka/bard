@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+  <head>
+    <meta charset="utf-8">
+    <title>Главная</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="track.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/ico" sizes="16x16" href="icon/icon.ico">
+    <style media="screen">
+    .rasp {
+      font-weight: 300;
+      font-size: 20px;
+      font-family: 'Comfortaa', cursive;
+      padding-top: -10%;
+      width: 1000px;
+      padding-left:25%;
+      text-align: center;
+    }
+
+    .rasp2 {
+      font-weight: 300;
+      font-size: 20px;
+      font-family: 'Comfortaa', cursive;
+      padding-top: -10%;
+      width: 1000px;
+      padding-left:25%;
+      text-align: center;
+    }
+
+    .container {
+      font-weight: 300;
+      font-size: 20px;
+      font-family: 'Comfortaa', cursive;
+      padding-top: -10%;
+      width: 1000px;
+      padding-left:33%;
+      text-align: center;
+    }
+
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.right-side {
+  width: 75%;
+  margin-left: 75px;
+}
+
+.input-box {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-box input,
+.input-box textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background: #f0f1f8;
+  padding: 0 20px;
+}
+
+.input-box textarea {
+  resize: none;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.message-box {
+  min-height: 110px;
+}
+
+.button {
+  display: inline-block;
+  font-family: 'Comfortaa', cursive;
+}
+
+.button input[type="button"] {
+  color: #fff;
+  font-size: 18px;
+  background: #EB4444;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 7px;
+  transition: 0.2s;
+  font-family: 'Comfortaa', cursive;
+}
+
+.button input[type="button"]:hover {
+  background: #E32C2C;
+}
+
+    </style>
+  </head>
+
+
+  <body>
+    <nav>
+      <div class="menu-items">
+        <img class="logo" src="logo.png" alt="лого">
+        <a href="onas.html">о нас</a>
+        <a href="mero.html">мероприятия</a>
+        <a href="menu.html">меню</a>
+        <a href="merch.html">мерч</a>
+        <a href="cont.html">контакты</a>
+      </div>
+    </nav>
+    <h1>Контакты</h1>
+    <h2>расположение</h2>
+    <p class="rasp">Мы находимся в большом панельном доме по адресу:<br>ул. забытых игрушек, 10</p>
+    <h2>Обратная связь</h2>
+    <p class="rasp2">Остались вопросы? Заполните форму ниже и мы с вами свяжемся в ближайшие сроки.</p>
+    <div class="container">
+      <div class="content">
+        <div class="left-side">
+          <div class="address details">
+            <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div class="right-side">
+          <form action="#">
+            <div class="input-box">
+              <input type="text" placeholder="Ваше имя" />
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Введите email" />
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Введите телефон" />
+            </div>
+            <div class="input-box message-box">
+              <textarea placeholder="Сообщение"></textarea>
+            </div>
+            <div class="button">
+              <input type="button" value="Отправить" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

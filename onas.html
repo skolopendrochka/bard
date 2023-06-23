@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+  <head>
+    <meta charset="utf-8">
+    <title>Главная</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="track.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/ico" sizes="16x16" href="icon/icon.ico">
+    <style media="screen">
+    .bard {
+      font-weight: 300;
+      font-size: 20px;
+      font-family: 'Comfortaa', cursive;
+      padding-top: -10%;
+      width: 1000px;
+      padding-left:28%;
+    }
+
+    .bard2 {
+      font-weight: 300;
+      font-size: 20px;
+      font-family: 'Comfortaa', cursive;
+      padding-top: -10%;
+      width: 1000px;
+      padding-left:28%;
+    }
+
+    .render2 {
+    width: 100%;
+    }
+
+    .plakati {
+    width: 100%;
+    align-items: center;
+    }
+
+    .plakati2 {
+      margin-top: 2%;
+      width: 100%;
+      align-items: center;
+    }
+
+    </style>
+  </head>
+
+
+  <body>
+    <nav>
+      <div class="menu-items">
+        <img class="logo" src="logo.png" alt="лого">
+        <a href="onas.html">о нас</a>
+        <a href="mero.html">мероприятия</a>
+        <a href="menu.html">меню</a>
+        <a href="merch.html">мерч</a>
+        <a href="cont.html">контакты</a>
+      </div>
+    </nav>
+    <h1>О нас</h1>
+    <h2>Концепция</h2>
+    <p class="bard">“Бардак” — место встреч для старых и забытых вещей, навсегда покинутых своими хозяинами на полках.</p>
+    <p class="bard2">Мы — закрытое сообщество старых вещей, обитающее в большом панельном доме, покинутом людьми.</p>
+
+    <div class="container7">
+      <div class="mySlides fade">
+        <img src="render2.svg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+        <img src="render 1.svg" style="width:100%">
+        </div>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <img class="plakati" src="plakati.svg" alt="">
+    <img class="plakati2" src="plakati2.svg" alt="">
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
+      }
+    </script>
+
+    <script src="index.js"></script>
+
+
+  </body>
+
+</html>
